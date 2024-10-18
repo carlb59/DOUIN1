@@ -19,7 +19,7 @@ df['Date']= pd.DatetimeIndex(df['Date']).strftime('%d-%m-%Y')
 
 app = Dash(__name__)
 
-server= douindash.app
+server= Chant_Dash.py.app
 
 app.layout = html.Div(children=[
     html.H1(children='DOUIN DashBoard Chantier en mouvement'),
