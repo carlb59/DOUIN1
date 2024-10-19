@@ -18,6 +18,7 @@ df = pd.read_excel('chant.xlsx')
 df['Date']= pd.DatetimeIndex(df['Date']).strftime('%d-%m-%Y')
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div(children=[
     html.H1(children='DOUIN DashBoard Chantier en mouvement'),
