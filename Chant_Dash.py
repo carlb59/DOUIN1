@@ -7,7 +7,7 @@ df = pd.read_excel('chant.xlsx')
 df['Date']= pd.DatetimeIndex(df['Date']).strftime('%d-%m-%Y')
 df['Resp']=df['Resp'].astype(str)
 
-app = Chant_Dach.server
+app = Chant_Dash.server
 
 
 
