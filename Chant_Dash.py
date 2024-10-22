@@ -9,8 +9,6 @@ df['Resp']=df['Resp'].astype(str)
 
 app = Chant_Dash.server
 
-
-
 app.layout = html.Div(children=[
 html.H1(children='DOUIN DashBoard Chantier en mouvement :'),
 dbc.Row([
