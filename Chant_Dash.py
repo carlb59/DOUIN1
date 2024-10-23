@@ -7,7 +7,7 @@ df = pd.read_excel('chant.xlsx')
 df['Date']= pd.DatetimeIndex(df['Date']).strftime('%d-%m-%Y')
 df['Resp']=df['Resp'].astype(str)
 
-app = dash.Dash(_name_)
+app = Dash(_name_)
 server = Chant_Dash.server
 
 app.layout = html.Div(children=[
