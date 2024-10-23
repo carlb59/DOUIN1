@@ -7,7 +7,7 @@ df = pd.read_excel('chant.xlsx')
 df['Date']= pd.DatetimeIndex(df['Date']).strftime('%d-%m-%Y')
 df['Resp']=df['Resp'].astype(str)
 
-app = Dash(__name__)
+app = Dash(Chant_Dash)
 server = Chant_Dash.server
 
 app.layout = html.Div(children=[
@@ -85,6 +85,6 @@ def update_dropdown(lchant_v, lresp_v):
     return dff.to_dict('records')
 
 
-if __name__ == "__main__":
+if Chant_Dash == "__main__":
     app.run_server(debug=True)
 
