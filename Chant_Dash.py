@@ -8,7 +8,7 @@ df['Date']= pd.DatetimeIndex(df['Date']).strftime('%d-%m-%Y')
 df['Resp']=df['Resp'].astype(str)
 
 app = Dash(_name_)
-server = app.server
+server = Chant_Dash.server
 
 app.layout = html.Div(children=[
 html.H1(children='DOUIN DashBoard Chantier en mouvement :'),
